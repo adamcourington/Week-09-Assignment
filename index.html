@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Run Log</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="container">
+    <br />
+    <div class="card">
+      <div class="card-body">
+        <div class="mb-3">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" class="form-control" id="date" />
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="new-task">Run Number</label>
+              <input
+                type="text"
+                class="form-control"
+                id="runNumber"
+                value="22-"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="col-sm control-label">Time of Call</label>
+              <div class="col-sm mb-3">
+                  <input type="text" id="time" class="form-control"   placeholder="xxxx" 
+              </div>    
+        </div>
+        <div class="form-group">
+          <label class="col-sm control-label">Primary Nature of Call</label>
+              <div class="col-sm mb-3">
+                  <select class="form-select" name="category1" id="nature">
+                      <option selected disabled></option>
+                      <option value="Covid_19">COVID-19</option>
+                      <option value="Bite">Bite</option>
+                      <option value="Cardiovascular">Cardiovascular</option>
+                      <option value="CNS_Neuro">CNS/Neuro</option>
+                      <option value="Diabetic">Diabetic</option>
+                      <option value="Fall">Fall</option>
+                      <option value="General_Illness">General Illness</option>
+                      <option value="MVC">MVC</option>
+                      <option value="OB_GYN">OB/GYN</option>
+                      <option value="Pain">Pain</option>
+                      <option value="Psych">Psych</option>
+                      <option value="Pulmonary">Pulmonary</option>
+                      <option value="Trauma">Trauma</option>
+                      <option value="Unresponsive">Unresponsive</option>
+                      <option value="False_Call">False Call</option>
+                      <option value="Fire_Type_Call">Fire Type Call</option>
+                      <option value="Investigate">Investigate</option>
+                      <option value="Mutual_Aid">Mutual Aid</option>
+                      <option value="Public_Services">Public Services</option>
+                      <option value="Technical_Rescue">Technical Rescue/Dive Team/Hazmat</option>
+                      <option value="Other">Other</option>
+                  </select>
+              </div>    
+        </div>
+        <div class="mb-3">
+          <div class="col-sm">
+            <div class="form-group">
+              <label for="new-task">Name</label>
+              <select class="form-select" id= "name" name="name" required>
+                <option selected disabled></option>
+                <option value="Armstrong">Armstrong</option>
+                <option value="Blount">Blount</option>
+                <option value="Borrello">Borrello</option>
+                <option value="Cain">Cain</option>
+                <option value="Courington">Courington</option>
+                <option value="Davis J.">Davis J.</option>
+                <option value="Dunaway">Dunaway</option>
+                <option value="Ford">Ford</option>
+                <option value="Green">Green</option>
+                <option value="Hannah">Hannah</option>
+                <option value="Holcombe">Holcombe</option>
+                <option value="Howard">Howard</option>
+                <option value="Hulsey">Hulsey</option>
+                <option value="Jenkins">Jenkins</option>
+                <option value="Jones">Jones</option>
+                <option value="Kearns">Kearns</option>
+                <option value="Lawrence">Lawrence</option>
+                <option value="Mitchell">Mitchell</option>
+                <option value="Mizell">Mizell</option>                                 
+                <option value="Mollica">Mollica</option>
+                <option value="Moman">Moman</option>
+                <option value="Mulkey">Mulkey</option>
+                <option value="Norsworthy">Norsworthy</option>      
+                <option value="Parsons">Parsons</option>
+                <option value="Puccio">Puccio</option>
+                <option value="Roberson">Roberson</option>
+                <option value="Shell">Shell</option>
+                <option value="Sims">Sims</option>
+                <option value="Smith B.">Smith B.</option>
+                <option value="Smith J.">Smith J.</option>
+                <option value="Templeton">Templeton</option>
+                <option value="Turner">Turner</option>
+                <option value="Tipton">Tipton</option>
+                <option value="Williams">Williams</option>
+                <option value="Other">Other</option>
+            </select>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div>
+          <button id="add" class="btn btn-primary from-control">Create</button>
+        </div>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+    <table id="list" class="table table-hover table-dark table-striped">
+      <tr>
+        <th>Date</th>
+        <th>Run Number</th>
+        <th>Time of Call</th>
+        <th>Nature of Call</th>
+        <th>Name</th>
+        <th>Actions</th>
+      </tr>
+    </table>
+    
+    <script src="runlog.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
